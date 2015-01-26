@@ -8,6 +8,8 @@ docker run -name myapp_data slank/data-container
 docker run -name myapp -volumes-from myapp_data myapp-image
 ```
 
-The included `noop.go` source file can be built by running `make`. It simply
-exits 0 (success). Using this binary results in an image roughly 1/4 the size
-of a busybox-based image.
+The included `setup.go` source file can be built by running `make`. Using this
+binary results in an image roughly 1/2 the size of a busybox-based image.
+
+The image's entrypoint accepts two arguments: the numeric uid and gid for
+/persistent. After setting ownership on the directory, it exits 0 (success).

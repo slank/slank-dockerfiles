@@ -1,2 +1,2 @@
-noop: noop.go
-	GOOS=linux GOARCH=amd64 go build -o noop noop.go
+setup: setup.go
+	GOOS=linux GOARCH=amd64 go build -o setup setup.go

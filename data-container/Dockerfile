@@ -1,4 +1,4 @@
 FROM scratch
-COPY noop /noop
+COPY setup /setup
 VOLUME /persistent
-CMD ["/noop"]
+ENTRYPOINT ["/setup"]
