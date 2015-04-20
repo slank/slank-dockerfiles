@@ -1,4 +1,4 @@
 FROM scratch
-COPY setup /setup
+COPY bin /bin
 VOLUME /persistent
-ENTRYPOINT ["/setup"]
+ENTRYPOINT ["/bin/setup"]
