@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 MAINTAINER Matthew Wedgwood "mwedgwood@gmail.com"
 
 ENV NGINX_FLAVOR extras
-ENV NGINX_VERSION 1.4.6-1ubuntu3.1
+ENV NGINX_VERSION 1.4.6-1ubuntu3.3
 
 RUN apt-get update \
   && apt-get install -y nginx-${NGINX_FLAVOR}=${NGINX_VERSION} \
